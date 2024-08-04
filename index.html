@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is A Keyword?</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <label for="keyword">Keyword:</label>
+    <input type="text" id="keyword" name="keyword">
+
+    <br>
+
+    <label for="languages">Choose a language:</label>
+    <select id="languages" name="languages"></select>
+
+    <br><br>
+
+    <button onclick="is_keyword(document.getElementById('languages').value, document.getElementById('keyword').value)">Check</button>
+
+    <br><br>
+    <p id="output"></p>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
